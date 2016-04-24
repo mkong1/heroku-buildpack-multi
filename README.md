@@ -1,5 +1,17 @@
-# Deprecated
+# heroku-buildpack-multi
 
-This project is deprecated and is no longer being maintained.
+Use multiple buildpacks on your app
 
-Please check out my current project [Convox](https://convox.com) for all of your deployment needs!
+DDollar is the man
+
+## Usage
+
+    $ heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git
+
+    $ cat .buildpacks
+    https://github.com/heroku/heroku-buildpack-nodejs.git#0198c71daa8
+    https://github.com/heroku/heroku-buildpack-ruby.git#v86
+
+## License
+
+MIT
